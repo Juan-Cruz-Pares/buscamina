@@ -61,7 +61,7 @@ function bomba(casillaClickeada) {
         }
     }
 
-    resultado.textContent = 'Lo siento, PERDISTE!!!';
+    resultado.textContent = 'PERDISTE! JAJAJA';
     resultado.classList.add('back-red');
 }
 
@@ -79,6 +79,7 @@ function añadirBandera(casilla) {
             casilla.classList.remove('bandera');
             casilla.innerHTML = '';
             numBanderas--;
+            actualizaNumBanderas();
         }
     }
 }
